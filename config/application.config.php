@@ -17,7 +17,7 @@ if ($env == 'development')
 {
 	// Modules Debug
 	$moddev =array(
-		'Developer',
+		    'Developer',
 			'ZendDeveloperTools',
 			'Album',
 			'Checklist',

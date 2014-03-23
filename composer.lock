@@ -538,16 +538,16 @@
         },
         {
             "name": "zf-commons/zfc-admin",
-            "version": "v0.1.1",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ZF-Commons/ZfcAdmin.git",
-                "reference": "85b4d647ba4d080f66d79b0a9deb986db093117c"
+                "reference": "081cc4b0df4855dcbbd8095a97a3f5eecd266012"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ZF-Commons/ZfcAdmin/zipball/85b4d647ba4d080f66d79b0a9deb986db093117c",
-                "reference": "85b4d647ba4d080f66d79b0a9deb986db093117c",
+                "url": "https://api.github.com/repos/ZF-Commons/ZfcAdmin/zipball/081cc4b0df4855dcbbd8095a97a3f5eecd266012",
+                "reference": "081cc4b0df4855dcbbd8095a97a3f5eecd266012",
                 "shasum": ""
             },
             "require": {
@@ -579,7 +579,7 @@
                 {
                     "name": "Martin Shwalbe",
                     "email": "martin.shwalbe@gmail.com",
-                    "homepage": "http://hounddog.github.io"
+                    "homepage": "http://hounddog.github.com"
                 }
             ],
             "description": "A generic Admin module for ZF2.",
@@ -587,7 +587,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2013-04-23 09:31:59"
+            "time": "2014-03-16 19:53:18"
         },
         {
             "name": "zf-commons/zfc-base",

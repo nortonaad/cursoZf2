@@ -13,10 +13,10 @@
         "zf-commons/zfc-user": "dev-master",
         "bjyoungblood/bjy-profiler": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "hybridauth/hybridauth": "dev-master",
         "socalnick/scn-social-auth": "dev-master",
         "bjyoungblood/bjy-authorize": "dev-master",
-        "zendframework/zendoauth" : "=2.0.2",     
+        "zendframework/zendoauth" : "=2.0.2",
+        "hybridauth/hybridauth": "dev-master",
         "danielss89/zfc-user-admin" : "dev-master"
     }
 }

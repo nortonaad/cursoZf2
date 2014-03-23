@@ -25,7 +25,7 @@ class AlbumClientController extends AbstractActionController
      */
     public function indexAction()
     {
-        $response = $this->getRestResponse("http://zf2.local/album-rest");
+        $response = $this->getRestResponse("http://cursozf2.local/album-rest");//"http://zf2.local/album-rest");
         $body = $response->getBody();
         $this->getResponse()->setContent($body);
         $albums = Json::decode($this->getResponse()->getContent(), Json::TYPE_OBJECT);
@@ -47,7 +47,7 @@ class AlbumClientController extends AbstractActionController
         
                 if ($form->isValid()) {
                         $data = $form->getData();
-                        $resp = $this->getRestResponse("http://zf2.local/album-rest", "POST", $data);
+                        $resp = $this->getRestResponse("http://cursozf2.local/album-rest", "POST", $data);//"http://zf2.local/album-rest", "POST", $data);
         
                         // Redirect to list of albums
                         return $this->redirect()->toRoute('albumclient');
@@ -71,14 +71,14 @@ class AlbumClientController extends AbstractActionController
         
                 if ($del == 'Yes') {
                         $id = (int) $request->getPost('id');
-                        $resp = $this->getRestResponse(sprintf("http://zf2.local/album-rest/%s", $id), "DELETE");
+                        $resp = $this->getRestResponse(sprintf("http://cursozf2.local/album-rest/%s", $id), "DELETE");//"http://zf2.local/album-rest/%s", $id), "DELETE");
                 }
         
                 // Redirect to list of albums
                 return $this->redirect()->toRoute('albumclient');
         }
         
-        $resp = $this->getRestResponse(sprintf("http://zf2.local/album-rest/%s", $id));
+        $resp = $this->getRestResponse(sprintf("http://cursozf2.local/album-rest/%s", $id));//"http://zf2.local/album-rest/%s", $id));
         $respData = Json::decode($resp->getBody());
         $album = new Album();
         $album->exchangeArray(get_object_vars($respData->album));
@@ -97,7 +97,7 @@ class AlbumClientController extends AbstractActionController
     			'action' => 'add'
         	));
         }
-        $resp = $this->getRestResponse(sprintf("http://zf2.local/album-rest/%s", $id));
+        $resp = $this->getRestResponse(sprintf("http://zf2.local/album-rest/%s", $id));//"http://zf2.local/album-rest/%s", $id));
         $respData = Json::decode($resp->getBody());
         $album = new Album();
         $album->exchangeArray(get_object_vars($respData->album));
@@ -112,7 +112,7 @@ class AlbumClientController extends AbstractActionController
         	$form->setData($request->getPost());
         
         	if ($form->isValid()) {
-        		$resp = $this->getRestResponse(sprintf("http://zf2.local/album-rest/%s", $id), "POST", get_object_vars($form->getData()));
+        		$resp = $this->getRestResponse(sprintf("http://cursozf2.local/album-rest/%s", $id), "POST", get_object_vars($form->getData()));//"http://zf2.local/album-rest/%s", $id), "POST", get_object_vars($form->getData()));
         		
         		// Redirect to list of albums
         		return $this->redirect()->toRoute('album');
